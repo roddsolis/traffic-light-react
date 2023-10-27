@@ -1,10 +1,55 @@
+@import './lights.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap');
+
 *{
-    padding:0;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body{
-    background-color: cornflowerblue;
+    background-color: #181818;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Inter Tight', sans-serif;
+    letter-spacing: 0.04em;
+}
+
+.projectWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+
+.trafficLightWrapper{
+    background:linear-gradient(0deg, rgb(255, 255, 255,0.02) 0%, rgb(255, 255, 255,0) 70%);
+    background-color: #0c0c0c;
+    width: fit-content;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    border-radius: 1em;
+    border: 7px solid rgb(228, 228, 228);
+    box-shadow: 0px 20px 40px -20px black , inset 0px 0px 2px 1px gray;
+}
+
+h1{
+
+    color: white;
+    opacity: 50%;
+
+}
+
+& p{
+    color: white;
+    opacity: 20%;
 }
 
